@@ -1,0 +1,33 @@
+*{
+  background-color:rgb(119, 118, 118);
+  color: white;
+  box-sizing: border-box;
+}
+.outercontainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nofound{
+  font-size: 40px;
+  text-align: center;
+}
+.createuser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+.createuser form{
+  width: 60%;
+  margin-top: 24px;
+}
