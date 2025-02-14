@@ -1,0 +1,3 @@
+export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting engaging and high-performance web applications. With over 2 years of hands-on experience, I have honed my skills in modern frontend technologies like React, HTML, CSS, and JavaScript. My goal is to leverage my expertise to create seamless, responsive, and user-friendly interfaces that enhance user experience and drive business growth.`;
+
+export const ABOUT_CONTENT='';
