@@ -1,6 +1,8 @@
 import "./App.css";
+import Experience from "./Components/Experience";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
+import Project from "./Components/Project";
 import Technologies from "./Components/Technologies";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Navbar/>
           <Hero/>
           <Technologies/>
+          <Project/>
+          <Experience/>
         </div>
       </div>
     </>
