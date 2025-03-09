@@ -36,14 +36,7 @@ const Navbar = () => {
         >
           <FaInstagram/>
         </a>
-        <a
-          href="https://www.twitter.com/in/example-user-name/projects/my-project-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="twitter"
-        >
-          <FaSquareXTwitter/>
-        </a>
+       
       </div>
     </nav>
   );

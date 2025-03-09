@@ -34,10 +34,10 @@ export const PROJECTS = [
   export const EXPERIENCES = [
     {
       year: "2025 - Present",
-      role: "Web Developer",
+      role: "Wordpress Developer",
       company: "WebMania",
       description: `Designed and developed required user interfaces and maintenance of the website.`,
-      technologies: ["HTML","CSS","JAVASCRIPT","Bootstrap"],
+      technologies: ["HTML","CSS","JAVASCRIPT","Bootstrap",'Wordpress'],
     },
     {
       year: "2024 - 2025",
@@ -47,3 +47,8 @@ export const PROJECTS = [
       technologies: ["HTML", "CSS", "Vite","React", "TailwindCss","Bootstrap"],
     },    
   ];
+  export const CONTACTS ={
+    address: "1154 Sector - 25, Panchkula, Haryana 134116 ",
+    phoneNo: "+91 8528129740 ",
+    email: "montukumarpandit19888@gmail.com",
+  };
