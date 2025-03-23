@@ -3,7 +3,7 @@ import project2 from '../Content/mnr.png'
 import project3 from '../Content/project-3.webp'
 import project4 from '../Content/project-4.webp'
 
-export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting engaging and high-performance web applications. With over 1 year of hands-on experience, I have honed my skills in modern frontend technologies like React, HTML, CSS, and JavaScript. Additionally, I have 6-8 months of experience working with WordPress, enabling me to create dynamic and customizable websites. My goal is to leverage my expertise to build seamless, responsive, and user-friendly interfaces that enhance user experience and drive business growth.`;
+export const HERO_CONTENT = `A highly motivated and results-driven Web Developer with a strong foundation in React.js and WordPress, dedicated to building high-performance, visually stunning, and user-friendly web applications. With hands-on experience in frontend development and payment gateway integration, I have successfully contributed to seamless, responsive, and scalable solutions that enhance user engagement. Passionate about leveraging modern web technologies, I continuously seek to push boundaries, optimize performance, and create exceptional digital experiences. Ready to bring innovation, efficiency, and expertise to the next challenge!`;
 
 export const ABOUT_CONTENT='';
 export const PROJECTS = [

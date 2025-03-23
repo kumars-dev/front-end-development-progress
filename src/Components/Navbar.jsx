@@ -8,12 +8,12 @@ const Navbar = () => {
     <nav className="flex items-center py-6 justify-between">
       <div className="flex flex-shrink-0 items-center">
         <a href="/" aria-label="Home">
-          <img src={logo} className="mx-2" width={100} height={100} alt="logo" />
+          <img src={logo} className="mx-2" width={150} height={150} alt="logo" />
         </a>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <a
-          href="www.linkedin.com/in/montu-kumar-1991b0202"
+          href="https://linkedin.com/in/montu-kumar-1991b0202"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="linkedin"
