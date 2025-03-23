@@ -31,8 +31,8 @@ const Hero = () => {
               src={profilepic}
               alt="profilepic"
               className="border border-stone-900 rounded-3xl"
-              width={650}
-              height={650}
+              width={465}
+              height={450}
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.5 }}
@@ -57,7 +57,7 @@ const Hero = () => {
             </motion.p>
             <motion.a
             variants={childVariants}
-              href="/resume.pdf"
+              href="/resume.docx"
               target="_blank"
               rel="noopener noreferrer"
               download

@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <a
-          href="https://www.linkedin.com/in/example-user-name/projects/my-project-link"
+          href="www.linkedin.com/in/montu-kumar-1991b0202"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="linkedin"
@@ -21,21 +21,21 @@ const Navbar = () => {
           <FaLinkedin/>
         </a>
         <a
-          href="https://www.github.com/in/example-user-name/projects/my-project-link"
+          href="https://github.com/kumars-dev"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="github"
         >
           <FaGithub/>
         </a>
-        <a
+        {/* <a
           href="https://www.instagram.com/in/example-user-name/projects/my-project-link"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="instagram"
         >
           <FaInstagram/>
-        </a>
+        </a> */}
        
       </div>
     </nav>

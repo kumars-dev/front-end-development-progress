@@ -1,18 +1,18 @@
-import project1 from '../Content/project-1.webp'
-import project2 from '../Content/project-2.webp'
+import project1 from '../Content/pa.png'
+import project2 from '../Content/mnr.png'
 import project3 from '../Content/project-3.webp'
 import project4 from '../Content/project-4.webp'
 
-export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting engaging and high-performance web applications. With over 2 years of hands-on experience, I have honed my skills in modern frontend technologies like React, HTML, CSS, and JavaScript. My goal is to leverage my expertise to create seamless, responsive, and user-friendly interfaces that enhance user experience and drive business growth.`;
+export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting engaging and high-performance web applications. With over 1 year of hands-on experience, I have honed my skills in modern frontend technologies like React, HTML, CSS, and JavaScript. Additionally, I have 6-8 months of experience working with WordPress, enabling me to create dynamic and customizable websites. My goal is to leverage my expertise to build seamless, responsive, and user-friendly interfaces that enhance user experience and drive business growth.`;
 
 export const ABOUT_CONTENT='';
 export const PROJECTS = [
     {
-      title: "Shopperview",
+      title: "Pretty Art Online",
       image: project1,
       description:
         "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-      technologies: ["HTML", "CSS", "React","Redux"],
+      technologies: ["HTML", "CSS",'Javascript','Wordpress'],
     },
     {
       title: "Meaner",
@@ -21,13 +21,7 @@ export const PROJECTS = [
         "An application to find meaning of the word while search on the tab. ",
       technologies: ["HTML", "CSS", "React", "Api"],
     },
-    {
-      title: "Portfolio Website",
-      image: project3,
-      description:
-        "A personal portfolio website showcasing projects, skills, and contact information.",
-      technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    },
+    
     
   ];
  

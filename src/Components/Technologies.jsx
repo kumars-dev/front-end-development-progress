@@ -4,6 +4,7 @@ import {
   RiHtml5Line,
   RiJavascriptLine,
   RiReactjsLine,
+  RiWordpressFill,
 } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
@@ -60,6 +61,13 @@ const Technologies = () => {
          animate="animate"
          variants={iconvariants(4)}>
           <RiReactjsLine className="text-7xl text-cyan-400" />
+        </motion.div>
+        <motion.div className="p-4"
+         initial="initial"
+         animate="animate"
+         variants={iconvariants(2.5)}>
+          <RiWordpressFill className="text-7xl " />
+          {/* <RiReactjsLine className="text-7xl text-cyan-400" /> */}
         </motion.div>
       </motion.div>
     </div>
