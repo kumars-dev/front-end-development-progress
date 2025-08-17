@@ -1,7 +1,7 @@
 import project1 from '../Content/pa.png'
 import project2 from '../Content/mnr.png'
-import project3 from '../Content/project-3.webp'
-import project4 from '../Content/project-4.webp'
+// import project3 from '../Content/project-3.webp'
+// import project4 from '../Content/project-4.webp'
 
 export const HERO_CONTENT = `A highly motivated and results-driven Web Developer with a strong foundation in React.js and WordPress, dedicated to building high-performance, visually stunning, and user-friendly web applications. With hands-on experience in frontend development and payment gateway integration, I have successfully contributed to seamless, responsive, and scalable solutions that enhance user engagement. Passionate about leveraging modern web technologies, I continuously seek to push boundaries, optimize performance, and create exceptional digital experiences. Ready to bring innovation, efficiency, and expertise to the next challenge!`;
 
@@ -13,6 +13,7 @@ export const PROJECTS = [
       description:
         "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
       technologies: ["HTML", "CSS",'Javascript','Wordpress'],
+      links:'https://prettyartonline.com.au/',
     },
     {
       title: "Meaner",
@@ -20,6 +21,7 @@ export const PROJECTS = [
       description:
         "An application to find meaning of the word while search on the tab. ",
       technologies: ["HTML", "CSS", "React", "Api"],
+      links:'https://meaner.netlify.app/',
     },
     
     

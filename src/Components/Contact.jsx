@@ -1,4 +1,4 @@
-import React from "react";
+
 import { CONTACTS } from "../assets/Content/content";
 import { motion } from "framer-motion";
 const Contact = () => {

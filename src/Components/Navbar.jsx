@@ -1,7 +1,9 @@
-import React from "react";
+// import React from "react";
 import logo from "../assets/mk.webp";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import {FaLinkedin } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+// import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
@@ -21,12 +23,12 @@ const Navbar = () => {
           <FaLinkedin/>
         </a>
         <a
-          href="https://github.com/kumars-dev"
+          href="mailto:montukumarpandit19888@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="github"
         >
-          <FaGithub/>
+          <IoMail />
         </a>
         {/* <a
           href="https://www.instagram.com/in/example-user-name/projects/my-project-link"

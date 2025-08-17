@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import profilepic from "../assets/Montu_kumar2218173-removebg-preview (2).png";
 import { HERO_CONTENT } from "../assets/Content/content";
 import { motion } from "framer-motion";

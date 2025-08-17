@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { PROJECTS } from "../assets/Content/content";
 import { motion } from "framer-motion";
 
@@ -18,9 +18,9 @@ const Project = () => {
           <div className="mb-8 flex flex-wrap lg:justify-center" key={index}>
             <div className="w-full lg:w-1/4">
               <motion.img
-              whileInView={{opacity:1,x:0}}
-              initial={{opacity:0,x:-100}}
-              transition={{duration:1}}
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1 }}
                 src={project.image}
                 alt={project.title}
                 width={250}
@@ -28,11 +28,12 @@ const Project = () => {
                 className="mb-6 rounded"
               />
             </div>
-            <motion.div 
-            whileInView={{opacity:1,x:0}}
-            initial={{opacity:0,x:100}}
-            transition={{duration:1}}
-            className="w-full max-w-xl lg:w-3/4">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
               <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
               <p className="mb-4 text-stone-400">{project.description}</p>
               {project.technologies.map((tech, index) => (
@@ -43,6 +44,14 @@ const Project = () => {
                   {tech}
                 </span>
               ))}
+              <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1 }}
+                className="w-full mt-6 p-2 rounded-2xl bg-black max-w-xl lg:w-3/4"
+              >
+                <a href={project.links}>{project.links}</a>
+              </motion.div>
             </motion.div>
           </div>
         ))}

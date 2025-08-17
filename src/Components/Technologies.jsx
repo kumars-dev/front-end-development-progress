@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import {
   RiCss3Line,
   RiHtml5Line,
@@ -6,7 +6,7 @@ import {
   RiReactjsLine,
   RiWordpressFill,
 } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+// import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
 const iconvariants = (duration) => ({
   initial: { y: -10 },
