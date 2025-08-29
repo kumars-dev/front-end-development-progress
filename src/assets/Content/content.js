@@ -7,14 +7,14 @@ export const HERO_CONTENT = `A highly motivated and results-driven Web Developer
 
 export const ABOUT_CONTENT='';
 export const PROJECTS = [
-    {
-      title: "Pretty Art Online",
-      image: project1,
-      description:
-        "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-      technologies: ["HTML", "CSS",'Javascript','Wordpress'],
-      links:'https://prettyartonline.com.au/',
-    },
+    // {
+    //   title: "Pretty Art Online",
+    //   image: project1,
+    //   description:
+    //     "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+    //   technologies: ["HTML", "CSS",'Javascript','Wordpress'],
+    //   links:'https://prettyartonline.com.au/',
+    // },
     {
       title: "Meaner",
       image: project2,
