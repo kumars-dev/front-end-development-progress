@@ -11,7 +11,7 @@
     ![Overview](./src/assets/readmescreenshot/overview.png)
 ---
 2. ### Products
-    ![product](./src/assets/readmescreenshot/product.png)
+    ![Product](./src/assets/readmescreenshot/Product.png)
 ---
 3. ### Users
     ![Users](./src/assets/readmescreenshot/Users.png)
