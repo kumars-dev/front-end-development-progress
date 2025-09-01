@@ -11,17 +11,17 @@
     ![Overview](./src/assets/readmescreenshot/overview.png)
 ---
 2. ### Products
-    ![Overview](./src/assets/readmescreenshot/product.png)
+    ![product](./src/assets/readmescreenshot/product.png)
 ---
 3. ### Users
-    ![Overview](./src/assets/readmescreenshot/users.png)
+    ![Users](./src/assets/readmescreenshot/Users.png)
 ---
 4. ### Sales
-    ![Overview](./src/assets/readmescreenshot/sale1.png)
-     ![Overview](./src/assets/readmescreenshot/sale2.png)
+    ![Sale1](./src/assets/readmescreenshot/sale1.png)
+     ![Sale2](./src/assets/readmescreenshot/sale2.png)
 ---
 5. ### Orders
-     ![Overview](./src/assets/readmescreenshot/orders.png)
+     ![Orders](./src/assets/readmescreenshot/Orders.png)
 ---
 
 note: analytics and setting is not done yet. i will update these as soon as possible.
