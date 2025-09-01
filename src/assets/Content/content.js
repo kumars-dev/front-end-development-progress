@@ -1,20 +1,28 @@
-import project1 from '../Content/pa.png'
+// import project1 from '../Content/pa.png'
 import project2 from '../Content/mnr.png'
-// import project3 from '../Content/project-3.webp'
-// import project4 from '../Content/project-4.webp'
+import admin_dashboard from '../Content/admin dashboard.png';
+import password_generator from '../Content/password generator.png';
+
 
 export const HERO_CONTENT = `A highly motivated and results-driven Web Developer with a strong foundation in React.js and WordPress, dedicated to building high-performance, visually stunning, and user-friendly web applications. With hands-on experience in frontend development and payment gateway integration, I have successfully contributed to seamless, responsive, and scalable solutions that enhance user engagement. Passionate about leveraging modern web technologies, I continuously seek to push boundaries, optimize performance, and create exceptional digital experiences. Ready to bring innovation, efficiency, and expertise to the next challenge!`;
 
 export const ABOUT_CONTENT='';
 export const PROJECTS = [
-    // {
-    //   title: "Pretty Art Online",
-    //   image: project1,
-    //   description:
-    //     "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    //   technologies: ["HTML", "CSS",'Javascript','Wordpress'],
-    //   links:'https://prettyartonline.com.au/',
-    // },
+    {
+      title: "Admin Dashboard",
+      image: admin_dashboard,
+      description:
+        "Aim for developing Admin UI is to explore what is required on industry level and design perspective level. ",
+      technologies: ["HTML", "CSS",'Javascript','React','Chart.js','Css Animation'],
+      links:'https://admindash-board-ui.netlify.app/',
+    },
+    {
+      title:'Password Generator',
+      image: password_generator,
+      description:"Password Generator is always an useful tool for me as when ever i want to generate password, I use this tool",
+      technologies:['HTML','CSS','Javascript'],
+      links:'https://kumars-dev.github.io/front-end-development-progress/'
+    },
     {
       title: "Meaner",
       image: project2,
