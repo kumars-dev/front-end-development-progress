@@ -14,7 +14,7 @@ export const PROJECTS = [
       description:
         "Aim for developing Admin UI is to explore what is required on industry level and design perspective level. ",
       technologies: ["HTML", "CSS",'Javascript','React','Chart.js','Css Animation'],
-      links:'https://admindash-board-ui.netlify.app/',
+      links:'https://mkadmindash-board-ui.netlify.app/',
     },
     {
       title:'Password Generator',

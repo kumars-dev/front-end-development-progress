@@ -1,29 +1,19 @@
-# Admin Dashboard UI
+### About Me
 
-## *Introduction*
+A passionate frontend developer who willing to buid website on behalf of my skill and knowledge. My techstack includes HTML, CSS, JAVASCRIPT, REACT JS, TAILWIND CSS, GIT and GITHUB, Redux.
 
-- Aim of creating admin panel Ui to build confidence in me.
-- facing new challenges in UI Designing while creating and learning new tech stack like chart.js library, and simple css animation.
-- Admin panel is based on product sales and profit counts.
-- ## ***Components***
-1. ### Overview
+Using these stack build some projects based on levels from basic to intermediate and still pushing forward to build more and upgrade it to advance level.
 
-    ![Overview](./src/assets/readmescreenshot/overview.png)
----
-2. ### Products
-    ![Product](./src/assets/readmescreenshot/Product.png)
----
-3. ### Users
-    ![Users](./src/assets/readmescreenshot/Users.png)
----
-4. ### Sales
-    ![Sale1](./src/assets/readmescreenshot/sale1.png)
-     ![Sale2](./src/assets/readmescreenshot/sale2.png)
----
-5. ### Orders
-     ![Orders](./src/assets/readmescreenshot/Orders.png)
 ---
 
-note: analytics and setting is not done yet. i will update these as soon as possible.
+## Short Term Goals
+I have set some goals which i have to achieve this end of the year. so it might be possible i update this portfolio accordingly. 
+Main part of setting goal is achieving more advance level.
 
-Thanks for visiting and reviewing 😊.
+---
+
+## Long Term Goals 
+
+Every one have long term goals, this is true but i'm not rely on this long time. what I want to achieve in long time is great success in less time.
+
+---
