@@ -62,6 +62,56 @@ have you observe how typescript file communicate with 'index.js' file?
 
 The answer to this is while compilation of typescript file typescript generates a index.js file and then what ever you code on typescript file it will update in javascript file as well.
 
+# Basic datatype | Tuple| Interface | Type aliasis
+ 
+* primitive types [number, boolean, string]
+* arrays,
+* Tuples,
+* Enums,
+* Any| Unknown| Void| Null| Undefined| Never.
+
+### Tuple
+`// tuple -> order matter just like man matters 😁
+let trr:[string, number] = ['mk',10]
+// but wait what if someone inject other values
+trr.push(56);
+console.log(trr,'tuple'); // ['mk',10,56]
+// means any buddy can push the code in it (no safety for indexes greater than 2, after 10 , any value can be inserted into array).
+// do we need to stop from being manipulated like my friend did to me.`
+
+`let trr1:readonly [string,number] = ['mk',11];
+// now try to push 
+// trr1.push(45); this won't work like mine X`
+
+`const tgraph :[x:number,y:number] = [34.534,23.22];
+console.log(tgraph);
+// destructure the same
+const [x,y ] = tgraph
+console.log("x"+ " "+ x,"y"+" "+ y);`
+
+### Interface
+
+interface UserDetailTypes{
+   name:string,
+   email:string,
+   phone:number,
+   password:string,
+   gender?:string // ? is represent as optional in typescript.
+}
+
+// what if we need to use above interface into new interface? solution is using extend keyword
+
+interface admin extends UserDetailTypes{
+   admin:boolean;
+}
+function userdetails(obj:admin){
+   console.log(obj)
+}
+userdetails({name:"montu", email:"montukumar@gmail.com",phone:853432,password:"asdfasdf",admin:true});
+userdetails({name:"kumar", email:"sohankumar@gmail.com",phone:929387498,password:"askdjflkjoajsdfj",admin:false});
+// we you make two interfaces with same name it got merged.
+
+
 # Conclusion
 
 The repository is based on learning process of typescript. what ever i learn will put here some meaningful and scrap 😁
