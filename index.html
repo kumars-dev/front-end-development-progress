@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <!-- logo -->
+
+        <img src="/logo.png" alt="City Spa" />
+
+        <nav>
+          <ul class="highscreen">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#aboutus" class="active">About Us</a></li>
+            <li><a href="#service" class="active">Services</a></li>
+            <li><a href="#gallery" class="active">Gallery</a></li>
+            <li><a href="#contact-us" class="active">Contact Us</a></li>
+          </ul>
+          <div id="mobilescreen">
+            <img src="/logo.png" alt="City Spa" />
+            <ul class="lowscreen">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#aboutus" class="active">About Us</a></li>
+              <li><a href="#service" class="active">Services</a></li>
+              <li><a href="#gallery" class="active">Gallery</a></li>
+              <li><a href="#contact-us" class="active">Contact Us</a></li>
+            </ul>
+            <i id="close" class="ri-close-fill"></i>
+          </div>
+          <i id="menu" class="ri-menu-3-line"></i>
+        </nav>
+        <!-- <div class="mobile_nav">
+
+        </div> -->
+      </header>
+      <div id="content">
+        <div class="swiper swiper_1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide_1">
+              <h3>Relax, Rejuvenate, Calm.</h3>
+              <p id="slide1para">
+                Escape the everyday. Step into a world where stress melts away,
+                and serenity embraces you. Discover your personal sanctuary and
+                let us pamper you from head to toe.
+              </p>
+              <button name="calltoaction" type="button">Explore</button>
+            </div>
+            <div class="swiper-slide slide_2">
+              <h3>Witness, Discover, Admire.</h3>
+              <p id="slide2para">
+                Step into our gallery and explore a vibrant world of visual
+                storytelling. We've captured unique moments, inviting you to
+                discover and immerse yourself in each piece.
+              </p>
+              <button name="calltoactionslide2" type="button">Visuals</button>
+            </div>
+            <div class="swiper-slide slide_3">
+              <h3>Connect, Reach, Talk.</h3>
+              <p id="slide3para">
+                Ready to escape? Book your serene spa experience today and let
+                us guide you to ultimate relaxation. Our team is here to help
+                you customize your perfect journey to tranquility.
+              </p>
+              <button name="calltoactionslide3" type="button">
+                Contact Us
+              </button>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination pagination"></div>
+        </div>
+
+        <!-- About us section -->
+        <section id="aboutus">
+          <div class="inneraboutcontainer">
+            <div class="leftabout">
+              <h1>About Us</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit laudantium, nam blanditiis quod ullam quam
+                voluptatem consequatur tenetur saepe perspiciatis.
+              </p>
+              <p>
+                Repellat sunt consequuntur assumenda quod rerum dicta!
+                Perferendis nemo, necessitatibus esse iure magnam earum minus
+                dignissimos consectetur iusto labore! Cumque?
+              </p>
+              <p>
+                Iusto repellendus sed deleniti atque, quisquam tempore
+                dignissimos voluptates est error perferendis vel aut ea odit
+                minus, hic itaque minima.
+              </p>
+              <!-- <button type="button">Read More</button> -->
+            </div>
+            <div class="rightabout">
+              <h1>About Us</h1>
+              <img src="./slide2.jpg" alt="aboutimg" />
+            </div>
+          </div>
+        </section>
+
+        <!-- service section -->
+        <section id="service">
+          <div class="innerservice">
+            <h1>Our Services</h1>
+            <div class="swiper cardswiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><h2>Cervical Massage</h2></div>
+                <div class="swiper-slide"><h2>Body Scrub</h2></div>
+                <div class="swiper-slide"><h2>Manicure</h2></div>
+                <div class="swiper-slide"><h2>Facial</h2></div>
+                <div class="swiper-slide"><h2>Aroma Therapy</h2></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div id="footersection">
+          <div class="section-1 sections">
+            <img src="./logo.png" alt="footerlogo" />
+          </div>
+          <div class="section-2 sections">
+            <div class="quicklinksection">
+              <h3>Quick Links</h3>
+              <nav>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#aboutus">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="section-3 sections">
+            <div class="details">
+              <h3>Contact Details</h3>
+              <div class="detailssection">
+                <p class="detailspara">
+                  <b>Address: </b><span
+                    >Sector 20, Derabassi, Zirakpur Road</span
+                  >
+                </p>
+                <p class="detailspara">
+                  <b>Email: </b><span
+                    ><a href="mailto:montukumarpandit19**.com">montukumar@gmail.com</a></span
+                  >
+                </p>
+                <p class="detailspara">
+                  <b>Phone: </b><span
+                    ><a href="tel:845345">852343443</a></span
+                  >
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="section-4 sections">4</div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper_1", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        autoplay: {
+          delay: 13000,
+          disableOnInteraction: false,
+        },
+      });
+
+      const cardswiper = new Swiper(".cardswiper", {
+        effect: "cards",
+        grabCursor: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
