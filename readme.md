@@ -111,6 +111,29 @@ userdetails({name:"montu", email:"montukumar@gmail.com",phone:853432,password:"a
 userdetails({name:"kumar", email:"sohankumar@gmail.com",phone:929387498,password:"askdjflkjoajsdfj",admin:false});
 // we you make two interfaces with same name it got merged.
 
+### CLASSES & OBJECTS
+#### classes - 
+classes are the instance of objects.
+example->
+
+``` 
+class Car{
+   name:string,
+   model:string
+} 
+
+const car1 = new Car("bugati","2025")
+
+```
+
+#### Access Modifiers
+there are three modifier, namely
+
+* Public
+* Protected
+* Private
+
+##### note:- these are mentioned and coded in index.ts file. Protected modifier will be done when we work on inheritance.
 
 # Conclusion
 
