@@ -55,3 +55,10 @@ function closeMobileMenu() {
     }, tl.duration() * 100);
 }
 
+
+// gallery animation scroll
+
+
+
+
+
