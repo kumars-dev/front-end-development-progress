@@ -243,8 +243,44 @@ class Metalmaker extends Bottlemaker {
     super(name); // accessing parent class constructor
   }
   getvalue() {
-    console.log(this.name, this.halua); // getting error as parent has private parameter in constructor
+    // console.log(this.name, this.halua); // getting error as parent has private parameter in constructor
   }
 }
-let m1 = new Metalmaker("chilton");
+let m1 = new Metalmaker("aaaaaaa");
 m1.getvalue();
+
+/* if you still have confusion this.name = name then you can follow below approach that will clear all clutter. 
+* one note here is class variable and methods if we want to access inside other methods then we need to use 'this' keyword. */
+class bhk{
+  public flat; //instead of name, use flat
+  constructor(name:string){
+    this.flat = name;
+  }
+}
+
+let bhk1 = new bhk('lmno1')
+console.log(bhk1);
+
+class Samsung{
+constructor(public name:string, public model:string, public imie?:number){}
+}
+
+const sam1 = new Samsung('samsungs23', '2024', 1232123);
+console.log('sam1',sam1)
+const sam2 = new Samsung('samsungs24', '2025');
+console.log('sam2',sam2)
+
+
+// getters && setters
+
+class Fullgalian{
+  constructor(
+    public abc:string,
+    public type:string[],
+  ){}
+  getName(){
+    return this.abc +" authors: "+ this.type[0]
+  }
+}
+let galian_1 = new Fullgalian('teri gali ki roshni',['kh....','bh...']) 
+console.log(galian_1.getName())

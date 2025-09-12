@@ -134,6 +134,9 @@ there are three modifier, namely
 * Private
 
 ##### note:- these are mentioned and coded in index.ts file. Protected modifier will be done when we work on inheritance.
+moving to next.......................
+
+### Readonly Properties
 
 # Conclusion
 
