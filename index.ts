@@ -278,9 +278,43 @@ class Fullgalian{
     public abc:string,
     public type:string[],
   ){}
+  // getter method
   getName(){
     return this.abc +" authors: "+ this.type[0]
+  }
+  setName(value:string){
+  return this.abc = value;
   }
 }
 let galian_1 = new Fullgalian('teri gali ki roshni',['kh....','bh...']) 
 console.log(galian_1.getName())
+let v1 = new Fullgalian('teri meri kahhani ', ['arjun', 'bh....'])
+console.log(v1.setName('animal'));
+
+// readonly property
+class Abcd{
+  constructor(public readonly myname:string){}
+  setName(value:string){
+    this.myname = value
+  }
+}
+let a1 = new Abcd('asdfa');
+console.log(a1.myname)
+
+// what actually is getter setter is ? -------- Readme.md file pls visit
+
+
+class bike{
+  constructor(
+    name:string,
+    model:number,
+    price:number,
+    cc:number
+  ){}
+  // suppose you want to change bike cc later 
+
+  getname(){} // this is the method, setName(){} is also a method.
+  get name(){
+   return this.name;
+  }
+}

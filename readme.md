@@ -91,6 +91,7 @@ console.log("x"+ " "+ x,"y"+" "+ y);`
 
 ### Interface
 
+``` js 
 interface UserDetailTypes{
    name:string,
    email:string,
@@ -110,13 +111,14 @@ function userdetails(obj:admin){
 userdetails({name:"montu", email:"montukumar@gmail.com",phone:853432,password:"asdfasdf",admin:true});
 userdetails({name:"kumar", email:"sohankumar@gmail.com",phone:929387498,password:"askdjflkjoajsdfj",admin:false});
 // we you make two interfaces with same name it got merged.
+```
 
 ### CLASSES & OBJECTS
 #### classes - 
 classes are the instance of objects.
 example->
 
-``` 
+```js
 class Car{
    name:string,
    model:string
@@ -137,6 +139,44 @@ there are three modifier, namely
 moving to next.......................
 
 ### Readonly Properties
+so when ever you don't want to change some variable at any cost put 'readonly' keyword after any access modifier. it will throw ts error 
+    `'Cannot assign to 'myname' because it is a read-only property.'`
+
+## Getter && Setter
+
+Now what if you want to change or seems like in future you might need to change variable name, then ?
+hit your mind if still not get it 🥴
+
+```js class bike{
+  constructor(
+    name:string,
+    model:number,
+    price:number,
+    cc:number
+  ){}
+  // suppose you want to change bike cc later 
+
+  getname(){} // this is the method, setName(){} is also a method.
+  
+  get name(){
+   // here error is in name 
+   return this.name;
+  }
+}
+```
+`` 
+'name' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.
+``
+what it means, 'name' is used in expression and we cannot use it. so, thinking of simplicity, you want to use name like:- `` va1.name ``.
+you can use underscore before your variable name :- `` constructor(public _name:string){} ``
+
+*underscore* will allow you to use name as function() with get keyword. then after code:-
+
+```js 
+get name(){return this._name}
+ ```
+
+
 
 # Conclusion
 
