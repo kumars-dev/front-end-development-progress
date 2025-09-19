@@ -136,27 +136,87 @@
             </div>
           </div>
         </section>
+
+        <!-- gallery -->
         <section id="gallery">
-          <h3>Gallery</h3>
-          <div class="gallery-container">
-            <div class="gallery-item">
-              <img src="https://picsum.photos/800/500.webp?1" alt="" />
+          <div class="gallerycontent">
+            <h3>Gallery</h3>
+            <p>Step into our spa gallery and discover a world of relaxation and rejuvenation. Each image reflects the serene atmosphere, soothing treatments, and calming spaces we create for our guests. From luxurious massage rooms to peaceful lounges, the visuals highlight the essence of wellness. Explore the gallery to experience tranquility, beauty, and holistic care.</p>
+          </div>
+          <div class="gallery-container vertical-scroll">
+            <div class="innergallerybox column">
+              <div class="leftbox">
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/300.webp?1" alt="" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/400.webp?2" alt="" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/234.webp?3" alt="" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/468.webp?4" alt="" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/234.webp?5" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="gallery-item">
-              <img src="https://picsum.photos/800/500.webp?2" alt="" />
-            </div>
-            <div class="gallery-item">
-              <img src="https://picsum.photos/800/500?3" alt="" />
-            </div>
-            <div class="gallery-item">
-              <img src="https://picsum.photos/800/500?4" alt="" />
-            </div>
-            <div class="gallery-item">
-              <img src="https://picsum.photos/800/500?5" alt="" />
+            <div class="innergallerybox column">
+              <div class="rightbox">
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/300.webp?6" alt="6" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/400.webp?7" alt="7" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/234.webp?8" alt="8" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/468.webp?9" alt="9" />
+                </div>
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/234.webp?10" alt="10" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
+        <section id="section" class="blank-section"></section>
+
+        <section id="testimonial">
+          <div class="inner-testimonial">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repudiandae minima debitis nam dicta totam! Nemo corrupti ipsa quos
+            dolorem earum est labore optio sunt, eos consectetur, maxime quaerat
+            quis doloribus molestias aliquid. Totam, fuga ducimus amet veniam
+            consectetur vero odit optio quidem dolorum ipsam necessitatibus quis
+            corrupti nesciunt, tempora architecto obcaecati et, numquam adipisci
+            rerum. Perferendis et nam doloribus, inventore architecto deleniti
+            mollitia quisquam! Doloribus, officiis ratione eveniet iste corrupti
+            perspiciatis laboriosam sit tempora natus quam provident itaque
+            optio sint distinctio modi quo? Laboriosam soluta deserunt optio
+            labore, voluptate corporis itaque dignissimos neque tenetur eos
+            fugiat corrupti, ipsam molestias aspernatur repellendus consequatur
+            hic quis voluptas suscipit rem? Vero corporis a delectus dolores
+            praesentium numquam sed quaerat rem voluptatem, dolorem similique
+            perspiciatis dicta, corrupti eaque ratione repudiandae animi iure
+            pariatur exercitationem perferendis nulla tempora officia debitis!
+            Provident nihil fugit nisi assumenda incidunt qui ipsam perferendis
+            nesciunt officia ut optio, amet, minus voluptate, debitis atque
+            dignissimos quis consequuntur. Quam, dignissimos! Eius blanditiis
+            dolore alias vitae debitis hic fuga quos aspernatur nobis vel sint
+            unde repellat omnis rerum nostrum aliquam cumque deleniti, maxime
+            atque consectetur. Repellat dolore excepturi temporibus perferendis
+            dolorem, consequatur doloremque! Illum voluptatem esse eius
+            exercitationem. Architecto laboriosam molestiae quas perferendis?
+          </div>
+        </section>
       </div>
+
       <!-- footer -->
       <footer>
         <div id="footersection">
@@ -237,6 +297,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js" integrity="sha512-t4hwZimhnCKT3YLAsEcAcRDkngVFfCcUIfNLIjklrIZAZKD+GfQMP7HbRcsVHxNS48WRBSywNU1uSM2zzLQt1Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -254,13 +315,15 @@
         },
       });
 
-      const cardswiper = new Swiper(".cardswiper", {
-        effect: "cards",
-        grabCursor: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+      document.querySelectorAll(".cardswiper").forEach((element) => {
+        new Swiper(element, {
+          effect: "cards",
+          grabCursor: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
       });
     </script>
   </body>

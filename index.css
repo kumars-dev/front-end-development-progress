@@ -20,6 +20,7 @@ body {
   padding: 0px;
   font-family: "Comfortaa", sans-serif;
   font-size: 20px;
+  position: relative;
   /* overflow-x: hidden; */
 }
 body {
@@ -31,9 +32,10 @@ body {
 #main {
   height: 100%;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
+  background-color: orangered;
 }
 header {
   height: 80px;
@@ -92,11 +94,11 @@ nav i {
   display: none;
 }
 nav #mobilescreen {
-  display: none;
+  display: none !important;
 }
 
-#content {
-  width: 100vw;
+#main #content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -228,11 +230,9 @@ button:hover {
 #aboutus {
   /* height: 100%; */
   width: 100%;
-  padding: 1em 0px;
+  padding: 5vw 0px;
 }
 .inneraboutcontainer {
-  height: 100%;
-  width: 100%;
   display: grid;
   gap: 10px;
   grid-template-columns: 50% 50%;
@@ -240,8 +240,6 @@ button:hover {
   padding-right: 2.5em;
   padding-top: 3em;
   padding-bottom: 3em;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .leftabout {
   display: block;
@@ -249,12 +247,8 @@ button:hover {
   width: 100%;
 }
 .leftabout h1 {
-  font-size: 4em;
+  font-size: 6vw;
   margin: 5px;
-}
-.leftabout button {
-  font-size: 1.2em;
-  margin-left: 0px;
 }
 .rightabout {
   display: block;
@@ -272,9 +266,9 @@ button:hover {
   width: 100%;
 }
 #service {
-  height: 80%;
-  width: 100vw;
-  padding: 1em 0px;
+  /* height: 80%; */
+  width: 100%;
+  padding: 1vw 0px;
   background: linear-gradient(
     75deg,
     rgba(67, 128, 219, 0.572) 10% 60%,
@@ -284,20 +278,19 @@ button:hover {
   mix-blend-mode: multiply;
 }
 .innerservice {
-  height: 100%;
-  width: 100%;
   padding: 0px 1.5rem;
+  padding: 3vw 0;
   position: relative;
 }
 .innerservice h1 {
-  font-size: 6em;
+  font-size: 8vw;
   letter-spacing: 15px;
   font-weight: 900;
-  margin: 5px;
+  margin: 0px 0px 0px 15px;
   background: linear-gradient(
-    60deg,
-    rgb(232, 80, 19) 10% 55%,
-    rgb(67, 128, 219) 30% 100%
+    30deg,
+    rgb(232, 80, 19) 25%,
+    rgb(67, 128, 219) 60%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -314,12 +307,12 @@ button:hover {
   padding: 10px;
   letter-spacing: 10px;
   word-spacing: 5px;
-  font-size: 11rem;
-  display: flex;
-  align-items: center;
+  font-size: 18vw;
+  /* display: flex; */
+  /* align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 100%; */
 }
 
 .cardswiper {
@@ -397,80 +390,7 @@ button:hover {
   background-size: cover;
 }
 
-/* gallery */
-#gallery {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 40px;
-}
-#gallery h3 {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  font-size: 8em;
-  height: 80%;
-  background: linear-gradient(120deg, orangered, #34b3f1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-#gallery .gallery-container {
-  display: flex;
-  padding: 10px;
-  overflow-x: scroll;
-  z-index: 3;
-}
-#gallery .gallery-container::before{
-  content: '';
-  top: 2px;
-  position: absolute;
-  height: 98%;
-  right: 49%;
-  width: 100px;
-  /* border: 1px solid green; */
-  background: linear-gradient(180deg, #eeeeee 105%,#34b3f1 25%, transparent 0%, #eeeeeeb7 45%);
-  filter: blur(15px);
-}
-.gallery-container .gallery-item {
-  display: flex;
-}
-
-
-/* footer */
-
-footer {
-  display: flex;
-  /* height must be attained through content only no need to provide height */
-  width: 100%;
-  background-color: #000000;
-  color: white;
-}
-footer #footersection {
-  display: grid;
-  grid-template-columns: 20% 25% 30% 25%;
-  height: 100%;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#footersection .sections {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  border-right: 1px solid #6b6b6b42;
-  height: 100%;
-  width: 100%;
-}
+/* sections */
 .section-1 img {
   justify-content: center;
   align-items: center;
@@ -569,7 +489,111 @@ span a {
   color: rgba(241, 241, 241, 0.877);
 }
 
+/* gallery */
+#gallery {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* overflow: hidden; */
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px 80px 40px;
+}
+#gallery h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: clamp(5em, 1vw, 9em);
+  background: linear-gradient(
+    270deg,
+    #f7d4d4f8,
+    #f15412 45%,
+    transparent 45%,
+    #0c59806a 2%,
+    transparent 60%,
+    #0c5980 20%,
+    #34b3f1 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gallerycontent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gallerycontent p {
+  font-size: clamp(0.5em, 1vw, 1.7em);
+  text-align: center;
+  font-weight: 800;
+  mix-blend-mode: difference;
+  color: #bcc7ccf5;
+}
+#gallery .gallery-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+}
+.gallery-container .column {
+  width: calc(100% / 2);
+  /* border: 1px solid purple; */
+}
+.leftbox,
+.rightbox {
+  will-change: transform;
+}
+.column .gallery-item {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* blank area */
+.blank-section {
+  height: 80vh;
+  width: auto;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  position: relative;
+  /* height must be attained through content only no need to provide height */
+  width: 100%;
+  background-color: #000000;
+  color: white;
+}
+footer #footersection {
+  display: grid;
+  grid-template-columns: 20% 25% 30% 25%;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#footersection .sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-right: 1px solid #6b6b6b42;
+  height: 100%;
+  width: 100%;
+}
+
 /* screen size 500px ke liye */
+
 @media screen and (max-width: 500px) {
   /* slidercontent */
   :is(.slide_1, .slide_2, .slide_3) h3 {
@@ -616,6 +640,59 @@ span a {
     word-spacing: 2px;
     font-size: 5rem;
     height: 100%;
+    width: 100%;
+  }
+  /* gallery */
+  #gallery {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallerycontent {
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    /* border: 1px solid rgba(255, 166, 0, 0.233); */
+    position: relative;
+    background: linear-gradient(
+      20deg,
+      #d6d9d9c7,
+      rgba(0, 0, 0, 0.404) 30%,
+      #d6d9d9c7
+    );
+    border-radius: 8px;
+    /* justify-content: start; */
+  }
+
+  .gallerycontent p {
+    color: #f5f8f9e1;
+    padding: 15px;
+  }
+  #gallery h3 {
+    color: #eeeeee;
+    margin: 5px;
+    background: linear-gradient(
+      220deg,
+      #f7d4d4f8,
+      #f15412 45%,
+      #1c5b7bb9 62%,
+      transparent 60%,
+      #0a86c4 70%,
+      #34b3f1 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #gallery .gallery-container {
+    position: absolute;
+    top: 10%;
+  }
+  .blank-section {
+    height: 50vh;
     width: 100%;
   }
 
@@ -675,6 +752,60 @@ span a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* gallery */
+  #gallery {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+  }
+  .gallerycontent {
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    /* border: 1px solid rgba(255, 166, 0, 0.233); */
+    position: relative;
+    background: linear-gradient(
+      20deg,
+      #d6d9d9c7,
+      rgba(0, 0, 0, 0.404) 30%,
+      #d6d9d9c7
+    );
+    border-radius: 8px;
+    /* justify-content: start; */
+  }
+
+  .gallerycontent p {
+    color: #f5f8f9e1;
+    padding: 15px;
+  }
+  #gallery h3 {
+    color: #eeeeee;
+    margin: 5px;
+    background: linear-gradient(
+      220deg,
+      #f7d4d4f8,
+      #f15412 45%,
+      #1c5b7bb9 62%,
+      transparent 60%,
+      #0a86c4 70%,
+      #34b3f1 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #gallery .gallery-container {
+    position: absolute;
+    top: 15%;
+  }
+  .blank-section {
+    height: 30vh;
+    width: 100%;
   }
 }
 
