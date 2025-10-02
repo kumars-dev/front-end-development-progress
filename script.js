@@ -70,11 +70,11 @@ gsap
       trigger: "#gallery",
       start: "top top",
       end: `+=${images.length * 50}`,
-      scrub: 2,
+      scrub: true,
       invaliddateOnRefresh: true,
-  //      markers:{
-  //   fontSize:"20px"
-  // },
+      //      markers:{
+      //   fontSize:"20px"
+      // },
     },
   })
   .to(leftcolumn, {
@@ -93,18 +93,52 @@ ScrollTrigger.create({
   start: "top top",
   end: `+=${images.length * 40}`,
   invaliddateOnRefresh: true,
-  pin:true,
+  pin: true,
   // markers:{
   //   fontSize:"20px"
   // }
 });
-let blank_space = document.querySelector('.blank-section')
-const styleobject ={
-  border:"1px solid red",
-  height:"60vh",
-  background:"#1c5b7bb9"
-}
+let blank_space = document.querySelector(".blank-section");
+const galleryParagraph = document.querySelector(".gallerycontent p");
 
-// blank_space.style.border = styleobject.border;
+// Split the text into individual spans
+const text = galleryParagraph.textContent;
+galleryParagraph.innerHTML = text
+  .split("")
+  .map(char => `<span class="letter">${char}</span>`)
+  .join("");
+
+// Get all letter spans
+const letters = gsap.utils.toArray(".letter");
+
+// Create ScrollTrigger for each letter
+letters.forEach(letter => {
+  ScrollTrigger.create({
+    trigger: letter,
+    trigger: blank_space,
+    start: "top bottom", // when blank section's top hits viewport bottom
+    end: "bottom top",   // when blank section's bottom leaves viewport top
+    scrub: true,
+    onUpdate: self => {
+      // Check if letter's bounding box intersects with blank section
+      const letterRect = letter.getBoundingClientRect();
+      const blankRect = blank_space.getBoundingClientRect();
+      
+      // If letter intersects with blank section, make it white
+      if (letterRect.bottom > blankRect.top && letterRect.top < blankRect.bottom) {
+        letter.style.color = "white";
+      } else {
+        letter.style.color = "#242424f5"; // original color
+      }
+    }
+  });
+});
+
+const styleobject = {
+  height: "60vh",
+  background: "#1c5b7bb9",
+};
+
 blank_space.style.height = styleobject.height;
 blank_space.style.background = styleobject.background;
+

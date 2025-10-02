@@ -515,6 +515,7 @@ span a {
     #34b3f1 60%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
 }
@@ -532,7 +533,12 @@ span a {
   text-align: center;
   font-weight: 800;
   mix-blend-mode: difference;
+}
+
+.gallerycontent p .letter {
   color: #242424f5;
+  transition: color 0.2s ease-in-out;
+  /* display: inline-block; */
 }
 
 #gallery .gallery-container {
@@ -566,6 +572,122 @@ span a {
 .blank-section {
   height: 30vh;
   width: auto;
+}
+
+
+/* TESTIMONIAL */
+#testimonial{
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+#testimonial .testimonialtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2vw;
+}
+.testimonialtitle h1{
+  margin: 0;
+  padding: .5vw;
+  text-align: center;
+  font-weight: 900 
+  !important;
+  font-size: clamp(1.5rem,4vw, 3rem);
+  position: relative;
+}
+.testimonialtitle h1 span{
+  color: orangered;
+}
+.testimonialtitle h5{
+  margin: 0;
+  padding: 2vw;
+  text-align: center;
+  line-height: 20px;
+  font-size: clamp(.5em,2vh,.8em);
+}
+.testimonialcontainercard{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.testcardscontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  gap: 20px;
+
+}
+.testcardscontainer .testcards{
+  position: relative;
+   background-color: #f1551227;
+  padding: 5vh;
+  display: flex;
+  justify-content: center;
+  width:450px;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 45%;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+}
+.testcardscontainer .testcards::before{
+  content:"\201C";
+  transform: rotate(5deg);
+  position:absolute;
+  top: 20px;
+  left: -35px;
+  color: #0a86c433;
+  font-size: clamp(5em,54vh,12em);
+}
+.testcardscontainer .testcards::after{
+  content:"\201D";
+  position:absolute;
+  top: 70%;
+  transform: rotate(-5deg);
+  right: 15%;
+  color: #0a86c433;
+  font-size: clamp(5em,54vh,12em);
+}
+.testcards .testcardtitle h3{
+  font-size: clamp(1.9em, 3vh,2.3em);
+  padding: 0px;
+  margin: 0px;
+}
+.testcards .testcardtitle h5{
+  margin: 5px;
+  color:#00000076
+}
+.testcards .stars{
+  /* padding: 10px; */
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  /* line-height: 8px; */
+  /* position: relative; */
+}
+.stars span{
+  /* position: relative; */
+/* font-size: 2vw; */
+padding: 4px;
+}
+.stars span img{
+  height: 30px;
+  width: 30px;
+}
+.testcards .testpara{
+  /* border: 1px solid orange; */
+  padding: 0px;
+  margin: 0px;
+  
+}
+.testpara h6{
+  margin-top: 0px;
+  
 }
 
 /* footer */
@@ -650,7 +772,7 @@ footer #footersection {
   #gallery {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
   }
@@ -689,6 +811,7 @@ footer #footersection {
       #34b3f1 90%
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   #gallery .gallery-container {
@@ -807,6 +930,7 @@ align-items: center;
       #34b3f1 90%
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   #gallery .gallery-container {
@@ -944,9 +1068,11 @@ align-items: center;
   /* background-color: #000000 !important; */
   height: 50vh !important;
 }
+.cardswiper {
+  height: 450px;
+  width: 350px;
+}
 }
 
-@media (min-width : 1202px){
 
-}
 /*  */
