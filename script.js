@@ -105,32 +105,35 @@ const galleryParagraph = document.querySelector(".gallerycontent p");
 const text = galleryParagraph.textContent;
 galleryParagraph.innerHTML = text
   .split("")
-  .map(char => `<span class="letter">${char}</span>`)
+  .map((char) => `<span class="letter">${char}</span>`)
   .join("");
 
 // Get all letter spans
 const letters = gsap.utils.toArray(".letter");
 
 // Create ScrollTrigger for each letter
-letters.forEach(letter => {
+letters.forEach((letter) => {
   ScrollTrigger.create({
     trigger: letter,
     trigger: blank_space,
     start: "top bottom", // when blank section's top hits viewport bottom
-    end: "bottom top",   // when blank section's bottom leaves viewport top
+    end: "bottom top", // when blank section's bottom leaves viewport top
     scrub: true,
-    onUpdate: self => {
+    onUpdate: (self) => {
       // Check if letter's bounding box intersects with blank section
       const letterRect = letter.getBoundingClientRect();
       const blankRect = blank_space.getBoundingClientRect();
-      
+
       // If letter intersects with blank section, make it white
-      if (letterRect.bottom > blankRect.top && letterRect.top < blankRect.bottom) {
+      if (
+        letterRect.bottom > blankRect.top &&
+        letterRect.top < blankRect.bottom
+      ) {
         letter.style.color = "white";
       } else {
         letter.style.color = "#242424f5"; // original color
       }
-    }
+    },
   });
 });
 
@@ -142,3 +145,53 @@ const styleobject = {
 blank_space.style.height = styleobject.height;
 blank_space.style.background = styleobject.background;
 
+const testcardscontainer = document.querySelector(".testcardscontainer");
+
+const testcards = document.querySelectorAll(".testcards");
+let testcardlength = testcards.length;
+
+const prevbtn = document.querySelector(".prev");
+const nextbtn = document.querySelector(".next");
+let curindex = 0;
+
+const testcardscontaineroffset = testcardscontainer.offsetWidth;
+if((testcardscontainer.offsetWidth < 500) || (testcardscontainer.offsetWidth > 501 && testcardscontainer.offsetWidth <= 910) ){
+function prevbtnhandler() {
+  if (curindex >= 0) {
+
+    curindex--;
+    console.log(-testcardscontaineroffset * curindex, "prev transform");
+
+    testcardscontainer.style.transform = `translateX(${
+      -testcardscontaineroffset * curindex
+    }px)`;
+    if (curindex < testcardlength - 1) {
+      nextbtn.disabled = false;
+    }
+    if (curindex == 0) {
+      prevbtn.disabled = true;
+    }
+  }
+}
+function nextbtnhandler() {
+  if (curindex < testcardlength - 1) {
+    prevbtn.disabled = false;
+    curindex++;
+    console.log(curindex, "now");
+    console.log(-testcardscontaineroffset + 18 * curindex, "next transform");
+    testcardscontainer.style.transform = `translateX(${-(
+      (testcardscontaineroffset + 20) *
+      curindex
+    )}px)`;
+    testcardscontainer.style.transition = `transform 0.4s ease-in`;
+    if (curindex == testcardlength - 1) {
+      console.log(curindex, "reached 2");
+      nextbtn.disabled = true;
+    }
+  }
+}
+
+
+prevbtn.addEventListener("click", prevbtnhandler);
+nextbtn.addEventListener("click", nextbtnhandler);
+}
