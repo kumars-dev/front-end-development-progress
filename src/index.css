@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
-@theme{
-    --font-inter:"Inter", "serif";
+@theme {
+  --font-inter: "Inter", "serif";
 }
-@layer{
-    body{
-        font-family: var(--font-inter);
-        background-color: #000000;
-        color: white;
-    }
+@layer {
+  body {
+    font-family: var(--font-inter);
+    background-color: #000000;
+    color: white;
+    -webkit-user-select: none;
+    user-select: none;
+  }
 }

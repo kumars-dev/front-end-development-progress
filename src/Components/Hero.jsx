@@ -46,10 +46,10 @@ const Hero = () => {
             variants={containerVariants}
             className="flex flex-col items-center lg:items-start mt-10"
           >
-            <motion.h2 variants={childVariants} className="pb-2 text-4xl tracking-tighter lg:text-6xl">
+            <motion.h1 variants={childVariants} className="pb-2 text-4xl tracking-tighter lg:text-9xl">
               Montu Kumar
-            </motion.h2>
-            <motion.span variants={childVariants} className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tighter text-transparent">
+            </motion.h1>
+            <motion.span variants={childVariants} className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-4xl tracking-tighter text-transparent">
               Front-End Developer
             </motion.span>
             <motion.p variants={childVariants} className="my-2 mx-w-lg py-6 text-xl leading-relaxed tracking-tighter">
@@ -57,11 +57,11 @@ const Hero = () => {
             </motion.p>
             <motion.a
             variants={childVariants}
-              href="/resume.docx"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10"
+              className="bg-white rounded-full p-4 text-xl text-stone-800 mb-10"
             >
               Download Resume
             </motion.a>

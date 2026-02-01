@@ -9,14 +9,14 @@ const Project = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-6xl"
       >
         Projects
       </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
-          <div className="mb-8 flex flex-wrap lg:justify-center" key={index}>
-            <div className="w-full lg:w-1/4">
+          <div className="mb-8 mt-6 flex flex-wrap lg:justify-center" key={index}>
+            <div className="w-full lg:w-1/4 flex justify-center">
               <motion.img
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
@@ -50,7 +50,7 @@ const Project = () => {
                 transition={{ duration: 1 }}
                 className="w-full mt-6 p-2 rounded-2xl bg-black max-w-xl lg:w-3/4"
               >
-                <a href={project.links}>{project.links}</a>
+                <a href={project.links} target="_blank">{project.links}</a>
               </motion.div>
             </motion.div>
           </div>

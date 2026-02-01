@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import Contact from "./Components/Contact";
 import Experience from "./Components/Experience";
@@ -7,6 +8,19 @@ import Project from "./Components/Project";
 import Technologies from "./Components/Technologies";
 
 function App() {
+  useEffect(() => {
+  const handleCopy = (e) => {
+    e.preventDefault();
+    alert("You are not allowed to copy this content.");
+  };
+
+  document.addEventListener("copy", handleCopy);
+
+  return () => {
+    document.removeEventListener("copy", handleCopy);
+  };
+}, []);
+
   return (
     <>
       <div className="overflow-x-hidden text-stone-300 antialiased">
